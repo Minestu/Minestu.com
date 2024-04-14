@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille Rhoads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+           <img src="images/logo3.png" class="logo">
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="photos.html">Phofolio</a></li>
+            <li><a href="space.html">Astrophotography</a></li>
+           </ul>
+        </nav>
+        <div class="header-text">
+            <p>Quality Analyst turned <span>Full-Stack Developer</span></p>
+            <h1>Nice to meet ya, <br>I'm <span>Camille</span></h1>
+        </div>
+    </div>
+</div>
+<!----------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/camille.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! My name is Camille Rhoads, and I am working to become a full stack developer. Take a chance on me and I'll show you just how fast a learner I am. <br> I have a deep rooted passion for space. I'm the kind of person with a telescope in my trunk just in case Im graced with a clear sky. I've even taught several space related classes over the years, for both children and adults. I'm also rather handy with a camera! Due to this I've taken a big liking for astrophotography. I just drove all the way from Florida to Indiana to catch the eclipse in Muncie! Check out my Astrophotography tab for some pictures I took there, as well as some of my older photos of the night sky. <br> Not a fan of space? Head over to the photography tab to see some pictures of life down below. <br> Thanks for visiting! <br> <span>p.s. if I met you in Muncie, hello again! I'm honored to have you visiting my website! <br> p.s.s. If we were coworkers from the Grand Blue Furnishing Box, thank you so much for reading my eclipse emails! I hope you were able to enjoy learning about that super cool sky event. Maybe I should post those here...</span></p>
+
+<!---------------Review below!!! something isnt working!!!-------------->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab"-id="skills">
+                    <ul>
+                        <li><span>Quality Analytics</span><br>Recognizing flaws in products and taking the proper steps to report them using set guidelines.</li>
+                        <li><span>Web Developement</span><br>Online portfolio presenting my skills as a prospective full stack developer.</li>
+                        <li><span>Photography</span><br>Equipped with an eye for detail and quick recognition of a perfect scene</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"-id="experience">
+                    <ul>
+                        <li><span>2022-2024</span><br>IKEA Product Quality Analyst</li>
+                        <li><span>2020-2022</span><br>IKEA Active Seller Warehouse/Livingrooms</li>
+                        <li><span>2016-2020</span><br>Starbucks Barista/Shift Supervisor</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"-id="education">
+                    <ul>
+                        <li><span>Coursera</span><br>HTML, CSS, JavaScript, Cloud Computing, React, React JS</li>
+                        <li><span>Florida State College at Jacksonville</span><br>AA achieved in General Studies, with a prospective focus on Meteorology and Physics</li>
+                        <li><span>Embry Riddle</span><br>High School Dual Enrollment program, AS120, AS220</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------REVIEW BELOW!!! SOMETHING ISNT WORKING-------------->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
